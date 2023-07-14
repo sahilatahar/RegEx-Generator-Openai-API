@@ -1,0 +1,147 @@
+.header {
+    color: #1cc49d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+    font-size: large;
+    font-weight: 600;
+    padding-bottom: 5rem;
+}
+
+.header>h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.main {
+    width: min(90vw, 700px);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.form>input[type='text'] {
+    width: 100%;
+    border: none;
+    border-radius: 100svh 0 0 100svh;
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    -webkit-border-radius: 100svh 0 0 100svh;
+    -moz-border-radius: 100svh 0 0 100svh;
+    -ms-border-radius: 100svh 0 0 100svh;
+    -o-border-radius: 100svh 0 0 100svh;
+}
+
+.form>input[type='submit'] {
+    border: none;
+    border-radius: 0 100svh 100svh 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: #1cc49d;
+    color: #1b2f31;
+    cursor: pointer;
+    -webkit-border-radius: 0 100svh 100svh 0;
+    -moz-border-radius: 0 100svh 100svh 0;
+    -ms-border-radius: 0 100svh 100svh 0;
+    -o-border-radius: 0 100svh 100svh 0;
+}
+
+.result {
+    text-align: center;
+    color: #1cc49d;
+    border: 2px #1cc49d solid;
+    margin-left: 1rem;
+    padding-bottom: .5rem;
+    margin: auto;
+}
+
+.result>legend {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 .5rem;
+    text-align: center;
+}
+
+.loading {
+    color: #1cc49d;
+    text-align: center;
+}
+
+.output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.output>p {
+    width: 90%;
+}
+
+.copy-btn {
+    width: 10%;
+    width: 3rem;
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.copy-btn>img {
+    width: 75%;
+    max-width: 100%;
+}
+
+.copy-btn>p {
+    color: #1cc49d;
+    margin: 0;
+    padding: 0;
+}
+
+.copy-btn:hover {
+    filter: drop-shadow(0 0 5px #1cc49d);
+    -webkit-filter: drop-shadow();
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        padding: 3rem 0;
+    }
+
+    .header>h1 {
+        width: 90vw;
+        font-size: 2.5rem;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: .8rem;
+        padding-bottom: 3rem;
+    }
+
+    .form>input[type='text'],
+    .form>input[type='submit'] {
+        font-size: 1rem;
+        border-radius: .8rem;
+        -webkit-border-radius: .8rem;
+        -moz-border-radius: .8rem;
+        -ms-border-radius: .8rem;
+        -o-border-radius: .8rem;
+    }
+
+    .result>legend {
+        font-size: 1rem;
+    }
+
+    .output {
+        font-size: 1rem;
+    }
+}
